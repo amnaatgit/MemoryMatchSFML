@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build (SFML, Linux)",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "${workspaceFolder}/src/main.cpp",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system",
+                "-o",
+                "${workspaceFolder}/bin/memory_match"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
